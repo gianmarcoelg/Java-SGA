@@ -12,7 +12,7 @@ import com.gmeg.sga.domain.PersonaBE;
 @Stateless
 public class PersonaServiceImpl implements PersonaServiceRemote {
 
-	@Override
+	//@Override
 	public List<PersonaBE> listarPersonas() {
 		List<PersonaBE> personas = new ArrayList<PersonaBE>();
 		personas.add(new PersonaBE(1, "Juan", "Perez", "Suarez", "jperez@gmail.com", "999888777"));
@@ -20,31 +20,31 @@ public class PersonaServiceImpl implements PersonaServiceRemote {
 		return personas;
 	}
 
-	@Override
+	//@Override
 	public PersonaBE encontrarPersona(PersonaBE persona) {
 		// TODO Auto-generated method stub
 		return null;
 	}	
 
-	@Override
+	//@Override
 	public PersonaBE encontrarPersonaPorEmail(PersonaBE persona) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
+	//@Override
 	public void registrarPersona(PersonaBE persona) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	//@Override
 	public void modificarPersona(PersonaBE persona) {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
+	//@Override
 	public void eliminarPersona(PersonaBE persona) {
 		// TODO Auto-generated method stub
 

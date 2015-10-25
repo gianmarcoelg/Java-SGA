@@ -15,7 +15,8 @@ public class ClientePersonaService {
 		try {
 			Context jndi = new InitialContext();
 			PersonaServiceRemote personaService = (PersonaServiceRemote)
-					jndi.lookup("java:global/sga-jee/PersonaServiceImpl!com.gmeg.sga.servicePersonaServiceRemote");
+					// 'sga-jee' es configurado como nombre de la app desde glassfish
+					jndi.lookup("java:global/sga-jee/PersonaServiceImpl!com.gmeg.sga.service.PersonaServiceRemote");
 			
 			List<PersonaBE> personas = personaService.listarPersonas();
 			

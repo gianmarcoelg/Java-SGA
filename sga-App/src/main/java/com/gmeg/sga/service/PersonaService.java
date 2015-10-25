@@ -2,14 +2,12 @@ package com.gmeg.sga.service;
 
 import java.util.List;
 
-import javax.ejb.Remote;
+import javax.ejb.Local;
 
 import com.gmeg.sga.domain.PersonaBE;
-/*
- * Interface para el llamado
- */
-@Remote
-public interface PersonaServiceRemote {
+
+@Local
+public interface PersonaService {
 	public List<PersonaBE> listarPersonas();
 
 	public PersonaBE encontrarPersona(PersonaBE persona);
@@ -21,5 +19,4 @@ public interface PersonaServiceRemote {
 	public void modificarPersona(PersonaBE persona);
 
 	public void eliminarPersona(PersonaBE persona);
-	
 }
