@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class PersonaBE implements Serializable{
 	/**
-	 * Clase que ser· enviada por la red con el protocolo
+	 * Clase que ser√° enviada por la red con el protocolo
 	 * RMI por eso es del tipo Serializable 
 	 */
 	private static final long serialVersionUID = 1L;
