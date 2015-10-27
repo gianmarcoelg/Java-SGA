@@ -15,6 +15,7 @@ public class PersonaDaoImpl implements PersonaDao {
 
 	
 	//Interactuar con objeto de base de datos:
+	// el cual esta declarado en el archivo persistence.xml
 	@PersistenceContext(unitName="PersonaPU")
 	EntityManager em;
 	
